@@ -1,0 +1,18 @@
+{
+  "name": "lista dos boards",
+  "helper_method_key": "trello_boards_list",
+  "requests": [ 
+    {
+      "method_name": "/1/members/me/boards",
+      "params": {},
+        "mapping": {
+        "label": {
+          "fields": ["name"]
+        },
+        "value": {
+          "field": "id"
+        }
+      }  
+    }
+  ]
+}

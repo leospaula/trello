@@ -1,0 +1,61 @@
+{
+  "name": {
+    "pt_BR": "card movido para lista",
+    "en": "card moved to list"
+  },
+  "trigger_key": "card_moved_to_list",
+  "description": {
+    "pt_br": "Quando um card de um determinado board​ é movido para uma determinada lista​.",
+    "en": "When a card from a particular board is moved to a particular list."
+  },
+  "trigger_fields": {
+    "type": "local",
+    "fields": [
+      {
+        "key": "work_email",
+        "name": "work_email",
+        "description": {"pt_BR": "email de trabalho do lead", "en": "lead's work email"},
+        "field_type": "string",
+        "metadata": { "field": "field_data",
+          "meta_key": "name",
+          "key": "work_email",
+          "value": "values"
+        }
+      }
+    ]
+  }, 
+  "trigger_type": "polling",
+  "base_datetime_filter": {
+    "field": "created_time",
+    "format": "%Y-%m-%dT%H:%M:%S%z",
+    "format_api_filter": "unix_timestamp"
+  },
+  "configuration_fields": 
+    [{
+      "key": "board_id", "name": {"pt_BR": "Listar boards", "en": "Board list"},
+      "label": {"pt_BR": "Selecione um board", "en": "Select board"},
+      "placeholder": {"pt_BR": "selecione board", "en": "Select board"},
+      "description": {"pt_BR": "Selecione o board que será usado",
+                  "en": "Select board that will be used"},
+      "required": true, "visible": true,
+      "field_type": "dropdown", "data_type": "string",
+      "list": {
+        "type": "remote",
+        "helper_method": "trello_boards_list"
+      }
+    }],
+  "request": {
+    "method_name": "/1/members/me/boards",
+    "params": {
+      "filtering": 
+      [ 
+        { 
+          "field": "time_created", 
+          "operator": "GREATER_THAN", 
+          "value": "{base_datetime_filter}" 
+        } 
+      ]
+    },
+    "response_field": "data"
+  }
+}

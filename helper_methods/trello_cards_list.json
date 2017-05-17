@@ -1,0 +1,19 @@
+{
+  "name": "lista dos cards de uma list",
+  "helper_method_key": "trello_cards_list",
+  "requests": [ 
+    {
+      "method_name": "/1/lists/{list_id}/cards",
+      "extra_params": [{"key": "list_id"}],
+      "params": {},
+        "mapping": {
+        "label": {
+          "fields": ["name"]
+        },
+        "value": {
+          "field": "id"
+        }
+      }  
+    }
+  ]
+}

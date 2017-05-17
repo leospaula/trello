@@ -1,0 +1,27 @@
+{
+  "name": "Trello",
+  "app_id": "trello",
+  "color": "#000000",
+  "description": {
+    "pt_BR":"Trello é a maneira fácil, grátis, flexível e visual de gerenciar seus projetos e organizar qualquer coisa.", 
+      "en": "Trello is the easy, free, flexible, and visual way to manage your projects and organize anything."},
+  "website": "https://trello.com/",
+  "signup_url": "https://trello.com/1/OAuthAuthorizeToken",
+  "api_base_uri": {
+    "production": {"uri": "https://trello.com", "label": "Produção", "default": true}
+  },
+  "authentication": {
+    "type": "oauth_2", 
+    "oauth_access_fields": {
+      "client_id": "client_id_para_a_pluga",
+      "client_secret": "client_secret_para_a_pluga",
+      "authorize_url": "https://trello.com/1/OAuthAuthorizeToken",
+      "access_token_url": "https://trello.com/1/OAuthGetAccessToken",
+      "redirect_uri": "https://manage.pluga.co/oauth2/facebook_ads",
+      "access_token_placement": "query_string",
+      "access_token_on_query_string_replacement": "token",
+      "response_type": "code",
+      "scope": ["read","write"]
+    }
+  }
+}
