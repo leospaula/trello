@@ -1,0 +1,85 @@
+{
+	"name": {
+    "pt_BR": "criar card em uma lista", 
+    "en": "create card in a list"
+  },
+  "action_key": "create_card",
+  "description": {
+  	"pt_BR": "criar card em uma lista",
+    "en": "create card in a list"
+  },
+  "action_fields": {
+  	"fields": [
+      {
+        "key": "board",
+        "name": {"pt_BR": "quadro", "en": "board"},
+        "description": {
+          "pt_BR": "Quadro do Trello",
+          "en": "Trello's Board"
+        },
+        "label": {
+          "pt_BR": "Selecione um quadro", 
+          "en": "Select a Board"
+        },
+        "required": true,
+        "visible": true,
+        "advanced": false,
+        "field_type": "dropdown",
+        "data_type": "string",
+        "list": {
+          "type": "remote",
+          "helper_method": "trello_boards_list"
+        }
+      },
+      {
+        "key": "list",
+        "name": {"pt_BR": "lista", "en": "list"},
+        "description": {
+          "pt_BR": "Lista de um Quadro",
+          "en": "Board's list"
+        },
+        "label": {
+          "pt_BR": "Selecione uma lista", 
+          "en": "Select a List"
+        },
+        "required": true,
+        "visible": true,
+        "advanced": false,
+        "field_type": "dropdown",
+        "data_type": "string",
+        "list": {
+          "type": "remote",
+          "helper_method": "trello_lists_list"
+        }
+      },
+      {
+        "key": "card_name",
+        "name": {"pt_BR": "nome do card", "en": "card name"},
+        "description": {
+          "pt_BR": "Nome do card que será inserido",
+          "en": "Card's name"
+        },
+        "required": true,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom_textarea",
+        "data_type": "string",
+        "max": 60
+      },
+      {
+        "key": "card_description",
+        "name": {"pt_BR": "descrição do card", "en": "card description"},
+        "description": {
+          "pt_BR": "Descrição do card que será inserido",
+          "en": "Card's description"
+        },
+        "required": false,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom_textarea",
+        "data_type": "string",
+        "max": 60
+      }
+    ]
+  } 
+}

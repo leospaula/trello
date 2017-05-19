@@ -1,0 +1,22 @@
+{
+  "app_source": "google_sheets",
+  "app_target": "trello",
+  "filters": [[]],
+  "mapper": [
+
+  ],
+  "trigger_key": "new_row",
+  "action_key": "create_card",
+  "name": {"pt_BR": "TODO: preencher descrição",
+            "en": "TODO: fill description"},
+  "description": {
+    "why_integrate": [{"pt_BR": "TODO: preencher descrição",
+                    "en": "TODO: fill description"}],
+    "how_it_works": [{"pt_BR": "TODO: preencher descrição",
+                    "en": "TODO: fill description"},
+                    {"pt_BR": "TODO: preencher descrição",
+                    "en": "TODO: fill description"},
+                    {"pt_BR": "TODO: preencher descrição",
+                    "en": "TODO: fill description"}]
+  }
+}
