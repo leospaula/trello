@@ -32,7 +32,7 @@
         }
       },
       {
-        "key": "list",
+        "key": "idList",
         "name": {"pt_BR": "lista", "en": "list"},
         "description": {
           "pt_BR": "Lista de um Quadro",
@@ -53,7 +53,7 @@
         }
       },
       {
-        "key": "card_name",
+        "key": "name",
         "name": {"pt_BR": "nome do card", "en": "card name"},
         "description": {
           "pt_BR": "Nome do card que será inserido",
@@ -67,7 +67,7 @@
         "max": 60
       },
       {
-        "key": "card_description",
+        "key": "desc",
         "name": {"pt_BR": "descrição do card", "en": "card description"},
         "description": {
           "pt_BR": "Descrição do card que será inserido",
@@ -81,5 +81,9 @@
         "max": 60
       }
     ]
-  } 
+  },
+  "request": {
+    "method_name": "/1/cards",
+    "json_api": true
+  }
 }
