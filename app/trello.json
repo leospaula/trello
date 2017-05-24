@@ -11,16 +11,18 @@
     "production": {"uri": "https://trello.com", "label": "Produção", "default": true}
   },
   "authentication": {
-    "type": "oauth_2", 
-    "oauth_access_fields": {
-      "client_id": "client_id_para_a_pluga",
-      "client_secret": "client_secret_para_a_pluga",
-      "authorize_url": "https://trello.com/1/OAuthAuthorizeToken",
-      "access_token_url": "https://trello.com/1/OAuthGetAccessToken",
-      "redirect_uri": "https://manage.pluga.co/oauth2/facebook_ads",
+    "type": "authorize_route", 
+    "fields": [{"name": "token", "label": "Token", "type": "text"}],
+    "access_fields": {
+      "authorize_url": "https://trello.com/1/authorize",
+      "key": "trello_app_key",
+      "name": "Pluga",
+      "callback_method": "fragment",
+      "expiration": "never",
+      "redirect_uri": "https://manage.pluga.co/auth/trello",
       "access_token_placement": "query_string",
       "access_token_on_query_string_replacement": "token",
-      "response_type": "code",
+      "response_type": "token",
       "scope": ["read","write"]
     }
   }

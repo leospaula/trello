@@ -1,5 +1,5 @@
 {
-  "app_source": "google_sheets",
+  "app_source": "iugu",
   "app_target": "trello",
   "filters": [[]],
   "mapper": [
