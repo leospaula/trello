@@ -21,6 +21,14 @@
           "pt_BR": "Selecione um quadro", 
           "en": "Select a Board"
         },
+        "description": {
+          "pt_BR": "Selecione um quadro.",
+          "en": "Select a Board."
+        },
+        "placeholder": {
+          "pt_BR": "Selecione um quadro", 
+          "en": "Select a Board"
+        },
         "required": true,
         "visible": true,
         "advanced": false,
@@ -39,6 +47,10 @@
           "en": "Board's list"
         },
         "label": {
+          "pt_BR": "Selecione uma lista", 
+          "en": "Select a List"
+        },
+        "placeholder": {
           "pt_BR": "Selecione uma lista", 
           "en": "Select a List"
         },

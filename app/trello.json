@@ -12,10 +12,11 @@
   },
   "authentication": {
     "type": "authorize_route", 
-    "fields": [{"name": "token", "label": "Token", "type": "text"}],
+    "fields": [{"name": "token", "label": "Token", "type": "text"},
+                {"name": "key", "label": "Key", "type": "text", "default": "app_key"}],
     "access_fields": {
       "authorize_url": "https://trello.com/1/authorize",
-      "key": "trello_app_key",
+      "key": "app_key",
       "name": "Pluga",
       "callback_method": "fragment",
       "expiration": "never",
