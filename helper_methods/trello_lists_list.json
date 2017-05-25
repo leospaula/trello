@@ -3,8 +3,8 @@
   "helper_method_key": "trello_lists_list",
   "requests": [ 
     {
-      "method_name": "/1/boards/{board_id}/lists",
-      "extra_params": [{"key": "board_id"}],
+      "method_name": "/1/boards/{idBoard}/lists",
+      "extra_params": [{"key": "idBoard"}],
       "params": {},
         "mapping": {
         "label": {

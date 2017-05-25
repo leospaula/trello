@@ -99,6 +99,14 @@
           "pt_BR": "Label do card que será inserido",
           "en": "Card's label"
         },
+        "label": {
+          "pt_BR": "Selecione um label", 
+          "en": "Select a label"
+        },
+        "placeholder": {
+          "pt_BR": "Selecionar label..", 
+          "en": "Select label.."
+        },
         "required": false,
         "visible": true,
         "advanced": true,
@@ -115,6 +123,14 @@
         "description": {
           "pt_BR": "Membro do card que será inserido",
           "en": "Card's member"
+        },
+        "label": {
+          "pt_BR": "Selecione um membro", 
+          "en": "Select a member"
+        },
+        "placeholder": {
+          "pt_BR": "Selecionar membro..", 
+          "en": "Select member.."
         },
         "required": false,
         "visible": true,

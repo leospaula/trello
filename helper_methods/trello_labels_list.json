@@ -3,12 +3,13 @@
   "helper_method_key": "trello_labels_list",
   "requests": [ 
     {
-      "method_name": "/1/boards/{board_id}/labels",
-      "extra_params": [{"key": "board_id"}],
+      "method_name": "/1/boards/{idBoard}/labels",
+      "extra_params": [{"key": "idBoard"}],
       "params": {},
         "mapping": {
         "label": {
-          "fields": ["name"]
+          "fields": ["name", "color"],
+          "separator": ": "
         },
         "value": {
           "field": "id"
