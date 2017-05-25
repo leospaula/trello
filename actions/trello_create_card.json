@@ -11,7 +11,7 @@
   "action_fields": {
   	"fields": [
       {
-        "key": "board",
+        "key": "idBoard",
         "name": {"pt_BR": "quadro", "en": "board"},
         "description": {
           "pt_BR": "Quadro do Trello",
@@ -72,6 +72,68 @@
         "description": {
           "pt_BR": "Descrição do card que será inserido",
           "en": "Card's description"
+        },
+        "required": false,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom_textarea",
+        "data_type": "string",
+        "max": 240
+      },
+      {
+        "key": "idLabels",
+        "name": {"pt_BR": "label do card", "en": "card label"},
+        "description": {
+          "pt_BR": "Label do card que será inserido",
+          "en": "Card's label"
+        },
+        "required": false,
+        "visible": true,
+        "advanced": true,
+        "field_type": "dropdown",
+        "data_type": "string",
+        "list": {
+          "type": "remote",
+          "helper_method": "trello_labels_list"
+        }
+      },
+      {
+        "key": "idMembers",
+        "name": {"pt_BR": "membros do card", "en": "card member"},
+        "description": {
+          "pt_BR": "Membro do card que será inserido",
+          "en": "Card's member"
+        },
+        "required": false,
+        "visible": true,
+        "advanced": true,
+        "field_type": "dropdown",
+        "data_type": "string",
+        "list": {
+          "type": "remote",
+          "helper_method": "trello_members_list"
+        }
+      }, 
+      {
+        "key": "due",
+        "name": {"pt_BR": "data de entrega", "en": "due date"},
+        "description": {
+          "pt_BR": "Data de entrega.",
+          "en": "Due Date."
+        },
+        "required": false,
+        "visible": true,
+        "advanced": false,
+        "field_type": "custom",
+        "data_type": "datetime",
+        "data_format": "%Y-%m-%d"
+      }, 
+      {
+        "key": "fileSource",
+        "name": {"pt_BR": "arquivo anexo", "en": "file attachment"},
+        "description": {
+          "pt_BR": "Arquivo Anexo.",
+          "en": "File Attachment."
         },
         "required": false,
         "visible": true,
