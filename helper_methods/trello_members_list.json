@@ -1,0 +1,19 @@
+{
+  "name": "lista dos membros de um boards",
+  "helper_method_key": "trello_members_list",
+  "requests": [ 
+    {
+      "method_name": "/1/boards/{board_id}/members",
+      "extra_params": [{"key": "board_id"}],
+      "params": {},
+        "mapping": {
+        "label": {
+          "fields": ["fullName"]
+        },
+        "value": {
+          "field": "id"
+        }
+      }  
+    }
+  ]
+}
