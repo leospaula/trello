@@ -24,38 +24,25 @@
       }
     ]
   }, 
-  "trigger_type": "polling",
-  "base_datetime_filter": {
-    "field": "created_time",
-    "format": "%Y-%m-%dT%H:%M:%S%z",
-    "format_api_filter": "unix_timestamp"
-  },
-  "configuration_fields": 
-    [{
-      "key": "board_id", "name": {"pt_BR": "Listar boards", "en": "Board list"},
-      "label": {"pt_BR": "Selecione um board", "en": "Select board"},
-      "placeholder": {"pt_BR": "selecione board", "en": "Select board"},
-      "description": {"pt_BR": "Selecione o board que será usado",
-                  "en": "Select board that will be used"},
-      "required": true, "visible": true,
-      "field_type": "dropdown", "data_type": "string",
-      "list": {
-        "type": "remote",
-        "helper_method": "trello_boards_list"
+  "trigger_type": "rest_hook",
+  "webhook": {
+    "message_type": "object",
+    "rest_hook_config": {
+      "create": {
+        "verb": "POST",
+        "method": "/1/tokens/{USER_TOKEN}/webhooks/?key={APPLICATION_KEY}",
+        "params":  {
+          "description": "Pluga webhook",
+          "callbackURL": "{webhook_url}",
+          "idModel": "{idList}"}
+      },
+      "delete": {
+        "verb": "DELETE",
+        "method": "/1/webhooks/{id}?key={APPLICATION_KEY}&token={USER_TOKEN}"
+      },
+      "meta_params": {
+        "webhook_id": "id",
+        "webhook_url": "url"
       }
-    }],
-  "request": {
-    "method_name": "/1/members/me/boards",
-    "params": {
-      "filtering": 
-      [ 
-        { 
-          "field": "time_created", 
-          "operator": "GREATER_THAN", 
-          "value": "{base_datetime_filter}" 
-        } 
-      ]
-    },
-    "response_field": "data"
-  }
+    } 
 }
