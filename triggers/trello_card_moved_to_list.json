@@ -12,14 +12,36 @@
     "type": "local",
     "fields": [
       {
-        "key": "work_email",
-        "name": "work_email",
-        "description": {"pt_BR": "email de trabalho do lead", "en": "lead's work email"},
+        "key": "member",
+        "name": "member",
+        "description": {"pt_BR": "membro do board", "en": "board's member"},
         "field_type": "string",
-        "metadata": { "field": "field_data",
-          "meta_key": "name",
-          "key": "work_email",
-          "value": "values"
+        "metadata": { "field": "action.data",
+          "meta_key": "member",
+          "key": "name",
+          "value": "name"
+        }
+      },
+      {
+        "key": "list",
+        "name": "list",
+        "description": {"pt_BR": "lista do board", "en": "board's list"},
+        "field_type": "string",
+        "metadata": { "field": "action.data",
+          "meta_key": "list",
+          "key": "name",
+          "value": "name"
+        }
+      },
+      {
+        "key": "card",
+        "name": "card",
+        "description": {"pt_BR": "card do board", "en": "board's card"},
+        "field_type": "string",
+        "metadata": { "field": "action.data",
+          "meta_key": "card",
+          "key": "name",
+          "value": "name"
         }
       }
     ]
