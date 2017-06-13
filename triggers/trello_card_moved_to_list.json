@@ -43,6 +43,276 @@
           "key": "name",
           "value": "name"
         }
+      },
+      {
+        "key": "voted",
+        "name": "voted",
+        "description": {"pt_BR": "card do board", "en": "board's card"},
+        "field_type": "string",
+        "metadata": { "field": "action.data",
+          "key": "voted",
+          "value": "voted"
+        }
+      },
+      {
+        "key": "type",
+        "name": "type",
+        "description": {"pt_BR": "card do board", "en": "board's card"},
+        "field_type": "string",
+        "metadata": { "field": "action",
+          "key": "type",
+          "value": "type"
+        }
+      },
+      {
+        "key": "member_creator_full_name",
+        "name": "member creator full name",
+        "description": {"pt_BR": "nome completo do criador do modelo", "en": "model's creator full name"},
+        "field_type": "string",
+        "metadata": { "field": "action.memberCreator",
+          "key": "fullName",
+          "value": "fullName"
+        }
+      },
+      {
+        "key": "member_creator_initials",
+        "name": "member creator initials",
+        "description": {"pt_BR": "iniciais do criador do modelo", "en": "model's creator initials"},
+        "field_type": "string",
+        "metadata": { "field": "action.memberCreator",
+          "key": "initials",
+          "value": "initials"
+        }
+      },
+      {
+        "key": "member_creator_username",
+        "name": "member creator username",
+        "description": {"pt_BR": "username do criador do modelo", "en": "model's creator username"},
+        "field_type": "string",
+        "metadata": { "field": "action.memberCreator",
+          "key": "username",
+          "value": "username"
+        }
+      },
+      {
+        "key": "model_name",
+        "name": "model name",
+        "description": {"pt_BR": "nome do modelo", "en": "model's name"},
+        "field_type": "string",
+        "metadata": { "field": "model",
+          "key": "name",
+          "value": "name"
+        }
+      },
+      {
+        "key": "model_desc",
+        "name": "model description",
+        "description": {"pt_BR": "descrição do modelo", "en": "model's description"},
+        "field_type": "string",
+        "metadata": { "field": "model",
+          "key": "desc",
+          "value": "desc"
+        }
+      },
+      {
+        "key": "model_url",
+        "name": "model url",
+        "description": {"pt_BR": "url do modelo", "en": "model's url"},
+        "field_type": "string",
+        "metadata": { "field": "model",
+          "key": "url",
+          "value": "url"
+        }
+      },
+      {
+        "key": "model_closed",
+        "name": "model closed",
+        "description": {"pt_BR": "url do modelo", "en": "model's url"},
+        "field_type": "string",
+        "metadata": { "field": "model",
+          "key": "closed",
+          "value": "closed"
+        }
+      },
+      {
+        "key": "model_pinned",
+        "name": "model pinned",
+        "description": {"pt_BR": "url do modelo", "en": "model's url"},
+        "field_type": "string",
+        "metadata": { "field": "model",
+          "key": "pinned",
+          "value": "pinned"
+        }
+      },
+      {
+        "key": "model_organization",
+        "name": "model organization",
+        "description": {"pt_BR": "organização do modelo", "en": "model's organization"},
+        "field_type": "string",
+        "metadata": { "field": "model",
+          "key": "idOrganization",
+          "value": "idOrganization"
+        }
+      },
+      {
+        "key": "model_permission_level",
+        "name": "model permission level",
+        "description": {"pt_BR": "nivel de permissão do modelo", "en": "model's permission level"},
+        "field_type": "string",
+        "metadata": { "field": "model.prefs",
+          "key": "permissionLevel",
+          "value": "permissionLevel"
+        }
+      },
+      {
+        "key": "model_voting",
+        "name": "model voting",
+        "description": {"pt_BR": "permissão de voto do modelo", "en": "model's permission voting"},
+        "field_type": "string",
+        "metadata": { "field": "model.prefs",
+          "key": "voting",
+          "value": "voting"
+        }
+      },
+      {
+        "key": "model_comments",
+        "name": "model comments",
+        "description": {"pt_BR": "permissão de comentário do modelo", "en": "model's permission comments"},
+        "field_type": "string",
+        "metadata": { "field": "model.prefs",
+          "key": "comments",
+          "value": "comments"
+        }
+      },
+      {
+        "key": "model_invitations",
+        "name": "model invitations",
+        "description": {"pt_BR": "permissão de convidar do modelo", "en": "model's permission invitations"},
+        "field_type": "string",
+        "metadata": { "field": "model.prefs",
+          "key": "invitations",
+          "value": "invitations"
+        }
+      },
+      {
+        "key": "model_self_join",
+        "name": "model self join",
+        "description": {"pt_BR": "permissão do modelo", "en": "model's permission"},
+        "field_type": "string",
+        "metadata": { "field": "model.prefs",
+          "key": "selfJoin",
+          "value": "selfJoin"
+        }
+      },
+      {
+        "key": "model_card_covers",
+        "name": "model card covers",
+        "description": {"pt_BR": "permissão do modelo", "en": "model's permission"},
+        "field_type": "string",
+        "metadata": { "field": "model.prefs",
+          "key": "cardCovers",
+          "value": "cardCovers"
+        }
+      },
+      {
+        "key": "model_can_be_public",
+        "name": "model can be public",
+        "description": {"pt_BR": "permissão do modelo", "en": "model's permission"},
+        "field_type": "string",
+        "metadata": { "field": "model.prefs",
+          "key": "canBePublic",
+          "value": "canBePublic"
+        }
+      },
+      {
+        "key": "model_can_be_org",
+        "name": "model can be org",
+        "description": {"pt_BR": "permissão do modelo", "en": "model's permission"},
+        "field_type": "string",
+        "metadata": { "field": "model.prefs",
+          "key": "canBeOrg",
+          "value": "canBeOrg"
+        }
+      },
+      {
+        "key": "model_can_be_private",
+        "name": "model can be private",
+        "description": {"pt_BR": "permissão do modelo", "en": "model's permission"},
+        "field_type": "string",
+        "metadata": { "field": "model.prefs",
+          "key": "canBePrivate",
+          "value": "canBePrivate"
+        }
+      },
+      {
+        "key": "model_can_invite",
+        "name": "model can invite",
+        "description": {"pt_BR": "permissão do modelo", "en": "model's permission"},
+        "field_type": "string",
+        "metadata": { "field": "model.prefs",
+          "key": "canInvite",
+          "value": "canInvite"
+        }
+      },
+      {
+        "key": "model_label_yellow",
+        "name": "model label yellow",
+        "description": {"pt_BR": "etiqueta amarela do modelo", "en": "model's yellow label"},
+        "field_type": "string",
+        "metadata": { "field": "model.labelNames",
+          "key": "yellow",
+          "value": "yellow"
+        }
+      },
+      {
+        "key": "model_label_red",
+        "name": "model label red",
+        "description": {"pt_BR": "etiqueta vermelha do modelo", "en": "model's red label"},
+        "field_type": "string",
+        "metadata": { "field": "model.labelNames",
+          "key": "red",
+          "value": "red"
+        }
+      },
+      {
+        "key": "model_label_purple",
+        "name": "model label purple",
+        "description": {"pt_BR": "etiqueta roxa do modelo", "en": "model's purple label"},
+        "field_type": "string",
+        "metadata": { "field": "model.labelNames",
+          "key": "purple",
+          "value": "purple"
+        }
+      },
+      {
+        "key": "model_label_orange",
+        "name": "model label orange",
+        "description": {"pt_BR": "etiqueta laranja do modelo", "en": "model's orange label"},
+        "field_type": "string",
+        "metadata": { "field": "model.labelNames",
+          "key": "orange",
+          "value": "orange"
+        }
+      },
+      {
+        "key": "model_label_green",
+        "name": "model label green",
+        "description": {"pt_BR": "etiqueta verde do modelo", "en": "model's green label"},
+        "field_type": "string",
+        "metadata": { "field": "model.labelNames",
+          "key": "green",
+          "value": "green"
+        }
+      },
+      {
+        "key": "model_label_blue",
+        "name": "model label blue",
+        "description": {"pt_BR": "etiqueta azul do modelo", "en": "model's blue label"},
+        "field_type": "string",
+        "metadata": { "field": "model.labelNames",
+          "key": "blue",
+          "value": "blue"
+        }
       }
     ]
   }, 
